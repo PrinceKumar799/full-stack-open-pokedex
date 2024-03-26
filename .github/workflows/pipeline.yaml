@@ -27,4 +27,6 @@ jobs:
         run: npx playwright install --with-deps
       - name: End to End Testing
         run: npx playwright test 
+      - name: Trigger Deployment
+        run: curl https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}
 
