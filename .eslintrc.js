@@ -22,10 +22,11 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     // semi: ["error", "never"],
     eqeqeq: "error",
-    "no-trailing-spaces": "error",
+    "no-trailing-spaces": 0,
     "object-curly-spacing": ["error", "always"],
     "arrow-spacing": ["error", { before: true, after: true }],
     "react/prop-types": 0,
     "no-console": 0,
+    "no-unused-vars": ["warning", "always"],
   },
 };
