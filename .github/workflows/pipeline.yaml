@@ -22,7 +22,7 @@ jobs:
       - name: Test Application
         run: npm run test
       - name: Start application
-        run: npm run start-prod
+        run: npm run start-prod &
         background: true
       - name: Install playwright browsers
         run: npx playwright install --with-deps
