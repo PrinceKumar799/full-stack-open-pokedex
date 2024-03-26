@@ -17,4 +17,8 @@ jobs:
         run: npm install
       - name: Check Styling
         run: npm run eslint
+      - name: Build Application
+        run: npm run build
+      - name: Test Application
+        run: npm run test
 
