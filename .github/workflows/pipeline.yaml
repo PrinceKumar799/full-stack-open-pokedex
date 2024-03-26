@@ -22,10 +22,9 @@ jobs:
       - name: Test Application
         run: npm run test
       - name: Start application
-        run: npm run start:prod
+        run: npm run start-prod
       - name: Install playwright browsers
         run: npx playwright install --with-deps
       - name: End to End Testing
         run: npx playwright test 
 
-  
